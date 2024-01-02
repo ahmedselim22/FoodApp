@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragments.MealBottomSheet"
+    android:id="@+id/constraint_bottomSheet_container"
+    android:background="@drawable/bottom_sheet_dialog_bg"
+    android:paddingTop="@dimen/_8sdp"
+    >
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:layout_width="@dimen/_90sdp"
+        android:layout_height="@dimen/_90sdp"
+        android:src="@color/accent"
+        app:riv_corner_radius="@dimen/_500sdp"
+        android:padding="@dimen/_12sdp"
+        android:id="@+id/iv_bottomSheet_mealImage"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_4sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="@dimen/_4sdp"
+        app:layout_constraintStart_toEndOf="@id/iv_bottomSheet_mealImage"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_bottomSheet_mealCategory"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableStart="@drawable/ic_category"
+            android:drawablePadding="@dimen/_8sdp"
+            android:fontFamily="@font/myfont"
+            android:padding="@dimen/_4sdp"
+            android:text="category"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/_12ssp" />
+
+        <TextView
+            android:id="@+id/tv_bottomSheet_mealCountry"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableStart="@drawable/ic_location"
+            android:drawablePadding="@dimen/_8sdp"
+            android:fontFamily="@font/myfont"
+            android:padding="@dimen/_4sdp"
+            android:text="country"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/_12ssp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_bottomSheet_mealName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/myfont"
+        android:padding="@dimen/_4sdp"
+        android:text="name"
+        android:textColor="@color/primary_text"
+        android:textSize="@dimen/_12ssp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/iv_bottomSheet_mealImage"
+        app:layout_constraintTop_toBottomOf="@+id/linear1" />
+
+    <TextView
+        android:id="@+id/tv_bottomSheet_txtReadMore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/_8sdp"
+        android:fontFamily="@font/myfont"
+        android:padding="@dimen/_4sdp"
+        android:text="Read more ..."
+
+        android:textColor="@color/primary_text"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_bottomSheet_mealImage"
+        app:layout_constraintStart_toEndOf="@+id/iv_bottomSheet_mealImage"
+        app:layout_constraintTop_toBottomOf="@+id/tv_bottomSheet_mealName" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
