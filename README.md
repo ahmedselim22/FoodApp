@@ -1,6 +1,8 @@
 # FoodApp
  Kotlin Food App using : Retrofit, MVVM, Coroutines, NavigationComponents, Glide, LottieAnimation, RecyclerView
-
+# API
+ https://www.themealdb.com/api.php
+ 
  ![WhatsApp Image 2024-01-02 at 6 51 49 PM (2)](https://github.com/ahmedselim22/FoodApp/assets/71884723/3f69849a-e423-45fb-a3ca-e6cc1f916df4)
 
 ![WhatsApp Image 2024-01-02 at 6 51 49 PM (1)](https://github.com/ahmedselim22/FoodApp/assets/71884723/f22a6887-7fb2-4036-8b0c-79880550df0e)
